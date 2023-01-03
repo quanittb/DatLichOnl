@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#000000"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="#03A9F4"
+                android:gravity="center"
+                android:text="Đăng kí hồ sơ"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                tools:textColor="#FFFFFF" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="20dp"
+                android:text="Họ Và Tên: "
+                android:textColor="#FFFFFF" />
+
+            <EditText
+                android:id="@+id/edten"
+                android:layout_width="360dp"
+                android:layout_height="40dp"
+                android:layout_marginStart="25dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/vien"
+                android:ems="50"
+                android:hint="Nhập họ và tên"
+                android:inputType="textPersonName"
+                android:paddingLeft="5dp"
+                android:textColor="#FFFFFF"
+                android:textColorHint="#7A7979" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="15dp"
+                android:text="Số Điện Thoại:"
+                android:textColor="#FFFFFF" />
+
+            <EditText
+                android:id="@+id/edsdt"
+                android:layout_width="360dp"
+                android:layout_height="40dp"
+                android:layout_marginStart="25dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/vien"
+                android:ems="10"
+                android:hint="Nhập số điện thoại"
+                android:inputType="number"
+                android:paddingLeft="5dp"
+                android:textColor="#FFFFFF"
+                android:textColorHint="#7A7979" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="15dp"
+                android:text="Ngày Sinh:"
+                android:textColor="#FFFEFE" />
+
+            <TextView
+                android:id="@+id/edngaysinh"
+                android:layout_width="360dp"
+                android:layout_height="40dp"
+                android:layout_marginStart="25dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/vien"
+                android:gravity="center_vertical"
+                android:hint="Nhập ngày sinh"
+                android:paddingLeft="5dp"
+                android:textColor="#FFFFFF"
+                android:textColorHint="#7A7979"
+                android:textSize="18sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="15dp"
+                android:layout_marginBottom="10dp"
+                android:text="Giới tinh:"
+                android:textColor="#FDFDFD" />
+
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+
+                <RadioButton
+                    android:id="@+id/rdnam"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:checked="true"
+                    android:text="Nam"
+                    android:textColor="#FFFFFF" />
+
+                <RadioButton
+                    android:id="@+id/rdnu"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Nữ"
+                    android:textColor="#FFFFFF" />
+            </RadioGroup>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="10dp"
+                android:text="Địa chỉ:"
+                android:textColor="#FFFFFF" />
+
+            <EditText
+                android:id="@+id/eddiachi"
+                android:layout_width="360dp"
+                android:layout_height="40dp"
+                android:layout_marginStart="25dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/vien"
+                android:ems="50"
+                android:hint="Nhập địa chỉ cụ thể"
+                android:inputType="textPersonName"
+                android:paddingLeft="5dp"
+                android:textColor="#FFFFFF"
+                android:textColorHint="#7A7979" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="15dp"
+                android:text="Số thẻ bảo hiểm y tế:"
+                android:textColor="#FFFFFF" />
+
+            <EditText
+                android:id="@+id/edbhyt"
+                android:layout_width="360dp"
+                android:layout_height="40dp"
+                android:layout_marginStart="25dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/vien"
+                android:ems="15"
+                android:hint="Nhập mã số thẻ bảo hiểm y tế"
+                android:inputType="number"
+                android:paddingLeft="5dp"
+                android:textColor="#FFFFFF"
+                android:textColorHint="#7A7979" />
+
+            <Button
+                android:id="@+id/btnDangki"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="#03A9F4"
+                android:onClick="dangki"
+                android:padding="5dp"
+                android:text="Hoàn tất"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/vien">
+
+    <LinearLayout
+        android:id="@+id/layoutTimKiem"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/txtTimKiem"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_weight="1"
+            android:background="@drawable/vien"
+            android:ems="10"
+            android:fadeScrollbars="false"
+            android:hint="Tìm kiếm theo khoa , bác sĩ......"
+            android:inputType="textPersonName"
+            android:textColor="#F44336"
+            android:textSize="18sp" />
+
+        <Button
+            android:id="@+id/btnTimKiem"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:background="#03A9F4"
+            android:onClick="timkiem"
+            android:text="Tìm kiếm" />
+
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/lstBS"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:listSelector="@android:color/holo_green_light" />
+
+</RelativeLayout>

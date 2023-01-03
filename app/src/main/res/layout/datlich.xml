@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000000">
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tenBS"
+        android:layout_marginTop="20dp"
+        android:text="Chọn giờ khám : *"
+        android:textColor="#03A9F4"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tenBS"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#03A9F4"
+        android:gravity="center"
+        android:text="ABC"
+        android:textColor="#FFFFFF"
+        android:textSize="34sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tvTime"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="100dp"
+        android:background="@drawable/vien"
+        android:foregroundTint="#C30707"
+        android:gravity="start|center_vertical"
+        android:hint="Chọn giờ khám "
+        android:paddingLeft="5dp"
+        android:textColor="#FFFFFF"
+        android:textColorHint="#B8B8B8"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvTime"
+        android:layout_marginTop="65dp"
+        android:text="Chọn ngày khám : *"
+        android:textColor="#03A9F4"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tvDate"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@id/tvTime"
+        android:layout_marginTop="100dp"
+        android:background="@drawable/vien"
+        android:gravity="center|start"
+        android:hint="Chọn ngày khám"
+        android:paddingLeft="5dp"
+        android:textColor="#FFFFFF"
+        android:textColorHint="#B8B8B8"
+        android:textSize="20sp" />
+
+    <Button
+        android:id="@+id/btnDatLich"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="false"
+        android:layout_alignParentBottom="true"
+        android:layout_centerInParent="true"
+        android:backgroundTint="#03A9F4"
+        android:text="Đặt lịch"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+</RelativeLayout>

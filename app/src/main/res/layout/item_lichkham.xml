@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/vien"
+    android:backgroundTint="@color/black"
+    android:paddingBottom="10dp">
+
+    <TextView
+        android:id="@+id/textView13"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textView6"
+        android:paddingLeft="5dp"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:text="Trạng thái"
+        android:textColor="#ACACAC"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/textView17"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txtTenBenhnhan"
+        android:layout_toRightOf="@id/textView13"
+        android:gravity="end"
+        android:paddingLeft="10dp"
+        android:paddingTop="10dp"
+        android:paddingRight="5dp"
+        android:paddingBottom="10dp"
+        android:text="Đang xử lý"
+        android:textColor="#4CAF50"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textView23"
+        android:paddingLeft="5dp"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:text="Bệnh nhân"
+        android:textColor="#ACACAC"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/txtTenBenhnhan"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textView23"
+        android:layout_toRightOf="@id/textView6"
+        android:gravity="end"
+        android:paddingLeft="10dp"
+        android:paddingTop="10dp"
+        android:paddingRight="5dp"
+        android:paddingBottom="10dp"
+        android:text="Bệnh nhân 1"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/textView15"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:paddingLeft="5dp"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:text="Bác sĩ"
+        android:textColor="#ACACAC"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/txtBacSi"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/textView15"
+        android:gravity="end"
+        android:paddingLeft="10dp"
+        android:paddingTop="10dp"
+        android:paddingRight="5dp"
+        android:paddingBottom="10dp"
+        android:text="Bác sĩ 1"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/txt"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textView15"
+        android:paddingLeft="5dp"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:text="Giờ khám "
+        android:textColor="#ACACAC"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/txtGioKham"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textView15"
+        android:layout_toRightOf="@id/txt"
+        android:gravity="end"
+        android:paddingLeft="10dp"
+        android:paddingTop="10dp"
+        android:paddingRight="5dp"
+        android:paddingBottom="10dp"
+        android:text="Giờ khám 1"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/textView23"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txt"
+        android:paddingLeft="5dp"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:text="Chuyên khoa"
+        android:textColor="#ACACAC"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/txtkhoa"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txt"
+        android:layout_toRightOf="@id/textView23"
+        android:gravity="end"
+        android:paddingTop="10dp"
+        android:paddingRight="5dp"
+        android:paddingBottom="10dp"
+        android:text="Khoa 1"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp" />
+
+    <Button
+        android:id="@+id/btnXoaLichkham"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textView17"
+        android:layout_alignRight="@id/textView17"
+        android:background="#FF0000"
+        android:text="Xóa"
+        android:visibility="invisible" />
+</RelativeLayout>

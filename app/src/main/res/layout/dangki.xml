@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/logodky"
+        android:layout_width="414dp"
+        android:layout_height="165dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.004"
+        app:srcCompat="@mipmap/ic_launcher_foreground" />
+
+    <EditText
+        android:id="@+id/txtTK"
+        android:layout_width="255dp"
+        android:layout_height="46dp"
+        android:ems="10"
+        android:hint="Nhập Tài Khoản"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.576"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/logodky"
+        app:layout_constraintVertical_bias="0.173" />
+
+    <EditText
+        android:id="@+id/txtMK"
+        android:layout_width="255dp"
+        android:layout_height="46dp"
+        android:ems="10"
+        android:hint="Nhập Mật Khẩu"
+        android:inputType="textPassword"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.576"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtTK"
+        app:layout_constraintVertical_bias="0.102" />
+
+    <EditText
+        android:id="@+id/txtReMK"
+        android:layout_width="255dp"
+        android:layout_height="46dp"
+        android:ems="10"
+        android:hint="Nhập Lại Mật Khẩu"
+        android:inputType="textPassword"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.576"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtMK"
+        app:layout_constraintVertical_bias="0.141" />
+
+    <Button
+        android:id="@+id/btndangky"
+        android:layout_width="139dp"
+        android:layout_height="40dp"
+        android:onClick="dangki"
+        android:text="ĐĂNG KÝ"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtReMK"
+        app:layout_constraintVertical_bias="0.265" />
+
+    <TextView
+        android:id="@+id/tvthongbao"
+        android:layout_width="wrap_content"
+        android:layout_height="18dp"
+        android:textColor="#FF2727"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btndangky"
+        app:layout_constraintVertical_bias="0.2" />
+</androidx.constraintlayout.widget.ConstraintLayout>
